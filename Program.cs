@@ -19,7 +19,6 @@ namespace Alps.Web.Canteen
                 .UseStartup<Startup>()
                 .UseApplicationInsights()
                 .Build();
-
             host.Run();
         }
     }
