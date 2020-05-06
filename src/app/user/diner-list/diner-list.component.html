@@ -1,0 +1,15 @@
+
+  <div class="card">
+    <div class="card-header">用餐者信息</div>
+    <div class="card-body">
+      共有{{diners.length}}名用餐者&nbsp;&nbsp;<a routerLink="/user/dineredit">增加</a>&nbsp;&nbsp;<a routerLink="/user/dinerblukupdate">批量更新</a>
+      &nbsp;&nbsp;<button *ngIf="!listDeleted"  (click)="list()">已删除列表</button><button *ngIf="listDeleted" (click)="list()">未删除列表</button>
+      <ul class="list-group list-group-item-primary">
+        <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let diner of diners">
+          {{diner.cardNumber}}/{{diner.name}}/{{diner.idNumber}}
+          <a class="badge badge-primary badge-pill" routerLink="/user/dineredit/{{diner.id}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+

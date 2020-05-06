@@ -1,0 +1,28 @@
+
+<div class="card">
+  <div class="card-header">绑定用餐者</div>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="bindName">姓名</label>
+      <input class="form-control" name="bindName" [(ngModel)]="bindName" />
+    </div>
+    <div class="form-group">
+      <label for="bindIDNumber">身份证号后6位</label>
+      <input class="form-control" name="bindIDNumber" [(ngModel)]="bindIDNumber" />
+    </div>
+    <!--<div class="form-group" *ngIf="!admin">
+      <label for="dinerID">绑定的卡号</label>
+      <input class="form-control" name="dinerName" [value]="dinerName" />
+    </div>
+    <div class="form-group" *ngIf="admin">
+      <label for="dinerID">绑定的卡号</label>
+      <select name="dinerID" class="form-control" [(ngModel)]="dinerID" >
+        <option *ngFor="let diner of diners" [value]="diner.id">{{diner.name}}</option>
+      </select>
+    </div>-->
+    <div class="card-footer">
+      <button class="btn btn-outline-primary" (click)="save()">绑定</button>
+      <button class="btn btn-outline-primary" (click)="back()">返回</button>
+    </div>
+  </div>
+</div>

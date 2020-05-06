@@ -1,0 +1,19 @@
+<p>
+  按钮显示为红色即预约成功
+</p>
+<div class="form-group">
+  <label for="dinerID">请选择用餐者</label>
+  <select name="dinerID" class="form-control" [(ngModel)]="selectedDiner" (change)="selectDiner(selectedDiner)">
+    <option *ngFor="let diner of diners" [value]="diner.id">{{diner.name}}</option>
+  </select>
+</div>
+  <label for="dinnerID">请选择要预约的餐</label>
+
+
+
+  <div class="row" *ngFor="let d of bookableDays">
+    <div  class="col-3" >{{d | date:"MM-dd"}}</div>
+    <div class="col-2" *ngFor="let dinner of dinners"><button #buttonElement   [disabled]="dinner.dinnerTime+d.valueOf()<nowTime" class="btn btn-outline-primary" (click)="book(dinner.id,d,buttonElement)" [style.color]="buttonElement.booked?'red':'black'" id="{{dinner.id}}/{{d.valueOf()}}">{{dinner.name}}</button></div>
+  </div>
+
+

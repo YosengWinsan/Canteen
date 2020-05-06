@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Alps.Web.Canteen</id>
+    <version>1.0.0</version>
+    <authors>Alps.Web.Canteen</authors>
+    <owners>Alps.Web.Canteen</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp1.1">
+        <dependency id="Microsoft.AspNetCore" version="1.1.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="1.1.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="1.1.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Cors" version="1.1.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.NETCore.App" version="1.1.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Authentication.JwtBearer" version="1.1.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="1.1.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Mvc" version="1.1.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ApplicationInsights.AspNetCore" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.StaticFiles" version="1.1.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netcoreapp1.1/wwwroot/3rdpartylicenses.txt" buildAction="Content" />
+      <files include="any/netcoreapp1.1/.angular-cli.json" buildAction="Content" />
+      <files include="any/netcoreapp1.1/appsettings.Development.json" buildAction="Content" />
+      <files include="any/netcoreapp1.1/appsettings.json" buildAction="Content" />
+      <files include="any/netcoreapp1.1/e2e/tsconfig.e2e.json" buildAction="Content" />
+      <files include="any/netcoreapp1.1/package.json" buildAction="Content" />
+      <files include="any/netcoreapp1.1/Properties/launchSettings.json" buildAction="Content" />
+      <files include="any/netcoreapp1.1/protractor.conf.json" buildAction="Content" />
+      <files include="any/netcoreapp1.1/proxy.conf.json" buildAction="Content" />
+      <files include="any/netcoreapp1.1/src/tsconfig.app.json" buildAction="Content" />
+      <files include="any/netcoreapp1.1/src/tsconfig.spec.json" buildAction="Content" />
+      <files include="any/netcoreapp1.1/tsconfig.json" buildAction="Content" />
+      <files include="any/netcoreapp1.1/tslint.json" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/app.routing.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/app.routing.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/user.service.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/user.service.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/app.component.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/app.component.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/canteen.service.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/canteen.service.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/dinner-info/dinner-info.component.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/dinner-info/dinner-info.component.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/canteen.component.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/canteen.component.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/book-dinner/book-dinner.component.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/book-dinner/book-dinner.component.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/auth.guard.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/auth.guard.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/canteen-routing.module.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/canteen-routing.module.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/take-dinner/take-dinner.component.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/take-dinner/take-dinner.component.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/canteen.module.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/canteen.module.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/app.module.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/app.module.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/environments/environment.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/environments/environment.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/main.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/main.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/polyfills.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/polyfills.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/test.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/test.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/environments/environment.prod.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/environments/environment.prod.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/app.component.spec.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/app.component.spec.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/auth.guard.spec.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/auth.guard.spec.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/user-info/user-info.component.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/user-info/user-info.component.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/login/login.component.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/login/login.component.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/user.component.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/user.component.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/diner-edit/diner-edit.component.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/diner-edit/diner-edit.component.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/register/register.component.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/register/register.component.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/user-routing.module.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/user-routing.module.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/user.component.spec.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/user.component.spec.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/user.module.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/user.module.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/user.service.spec.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/user.service.spec.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/user-info/user-info.component.spec.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/user-info/user-info.component.spec.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/register/register.component.spec.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/register/register.component.spec.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/login/login.component.spec.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/login/login.component.spec.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/diner-edit/diner-edit.component.spec.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/user/diner-edit/diner-edit.component.spec.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/canteen.component.spec.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/canteen.component.spec.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/canteen.service.spec.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/canteen.service.spec.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/take-dinner/take-dinner.component.spec.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/take-dinner/take-dinner.component.spec.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/dinner-info/dinner-info.component.spec.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/dinner-info/dinner-info.component.spec.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/book-dinner/book-dinner.component.spec.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/src/app/canteen/book-dinner/book-dinner.component.spec.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/e2e/app.po.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/e2e/app.po.js.map" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/e2e/app.e2e-spec.js" buildAction="Content" />
+      <files include="any/netcoreapp1.1/dist/out-tsc/e2e/app.e2e-spec.js.map" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\bin\Debug\netcoreapp1.1\Alps.Web.Canteen.runtimeconfig.json" target="lib\netcoreapp1.1\Alps.Web.Canteen.runtimeconfig.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\bin\Debug\netcoreapp1.1\Alps.Web.Canteen.dll" target="lib\netcoreapp1.1\Alps.Web.Canteen.dll" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\wwwroot\3rdpartylicenses.txt" target="content\wwwroot\3rdpartylicenses.txt" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\wwwroot\3rdpartylicenses.txt" target="contentFiles\any\netcoreapp1.1\wwwroot\3rdpartylicenses.txt" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\.angular-cli.json" target="content\.angular-cli.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\.angular-cli.json" target="contentFiles\any\netcoreapp1.1\.angular-cli.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\appsettings.Development.json" target="content\appsettings.Development.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\appsettings.Development.json" target="contentFiles\any\netcoreapp1.1\appsettings.Development.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\appsettings.json" target="content\appsettings.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\appsettings.json" target="contentFiles\any\netcoreapp1.1\appsettings.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\e2e\tsconfig.e2e.json" target="content\e2e\tsconfig.e2e.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\e2e\tsconfig.e2e.json" target="contentFiles\any\netcoreapp1.1\e2e\tsconfig.e2e.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\package.json" target="content\package.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\package.json" target="contentFiles\any\netcoreapp1.1\package.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\Properties\launchSettings.json" target="content\Properties\launchSettings.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\Properties\launchSettings.json" target="contentFiles\any\netcoreapp1.1\Properties\launchSettings.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\protractor.conf.json" target="content\protractor.conf.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\protractor.conf.json" target="contentFiles\any\netcoreapp1.1\protractor.conf.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\proxy.conf.json" target="content\proxy.conf.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\proxy.conf.json" target="contentFiles\any\netcoreapp1.1\proxy.conf.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\src\tsconfig.app.json" target="content\src\tsconfig.app.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\src\tsconfig.app.json" target="contentFiles\any\netcoreapp1.1\src\tsconfig.app.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\src\tsconfig.spec.json" target="content\src\tsconfig.spec.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\src\tsconfig.spec.json" target="contentFiles\any\netcoreapp1.1\src\tsconfig.spec.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\tsconfig.json" target="content\tsconfig.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\tsconfig.json" target="contentFiles\any\netcoreapp1.1\tsconfig.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\tslint.json" target="content\tslint.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\tslint.json" target="contentFiles\any\netcoreapp1.1\tslint.json" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\app.routing.js" target="content\dist\out-tsc\src\app\app.routing.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\app.routing.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\app.routing.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\app.routing.js.map" target="content\dist\out-tsc\src\app\app.routing.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\app.routing.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\app.routing.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user.service.js" target="content\dist\out-tsc\src\app\user\user.service.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user.service.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\user.service.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user.service.js.map" target="content\dist\out-tsc\src\app\user\user.service.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user.service.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\user.service.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\app.component.js" target="content\dist\out-tsc\src\app\app.component.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\app.component.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\app.component.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\app.component.js.map" target="content\dist\out-tsc\src\app\app.component.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\app.component.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\app.component.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen.service.js" target="content\dist\out-tsc\src\app\canteen\canteen.service.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen.service.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\canteen.service.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen.service.js.map" target="content\dist\out-tsc\src\app\canteen\canteen.service.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen.service.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\canteen.service.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\dinner-info\dinner-info.component.js" target="content\dist\out-tsc\src\app\canteen\dinner-info\dinner-info.component.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\dinner-info\dinner-info.component.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\dinner-info\dinner-info.component.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\dinner-info\dinner-info.component.js.map" target="content\dist\out-tsc\src\app\canteen\dinner-info\dinner-info.component.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\dinner-info\dinner-info.component.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\dinner-info\dinner-info.component.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen.component.js" target="content\dist\out-tsc\src\app\canteen\canteen.component.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen.component.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\canteen.component.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen.component.js.map" target="content\dist\out-tsc\src\app\canteen\canteen.component.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen.component.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\canteen.component.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\book-dinner\book-dinner.component.js" target="content\dist\out-tsc\src\app\canteen\book-dinner\book-dinner.component.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\book-dinner\book-dinner.component.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\book-dinner\book-dinner.component.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\book-dinner\book-dinner.component.js.map" target="content\dist\out-tsc\src\app\canteen\book-dinner\book-dinner.component.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\book-dinner\book-dinner.component.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\book-dinner\book-dinner.component.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\auth.guard.js" target="content\dist\out-tsc\src\app\auth.guard.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\auth.guard.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\auth.guard.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\auth.guard.js.map" target="content\dist\out-tsc\src\app\auth.guard.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\auth.guard.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\auth.guard.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen-routing.module.js" target="content\dist\out-tsc\src\app\canteen\canteen-routing.module.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen-routing.module.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\canteen-routing.module.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen-routing.module.js.map" target="content\dist\out-tsc\src\app\canteen\canteen-routing.module.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen-routing.module.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\canteen-routing.module.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\take-dinner\take-dinner.component.js" target="content\dist\out-tsc\src\app\canteen\take-dinner\take-dinner.component.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\take-dinner\take-dinner.component.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\take-dinner\take-dinner.component.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\take-dinner\take-dinner.component.js.map" target="content\dist\out-tsc\src\app\canteen\take-dinner\take-dinner.component.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\take-dinner\take-dinner.component.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\take-dinner\take-dinner.component.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen.module.js" target="content\dist\out-tsc\src\app\canteen\canteen.module.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen.module.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\canteen.module.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen.module.js.map" target="content\dist\out-tsc\src\app\canteen\canteen.module.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen.module.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\canteen.module.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\app.module.js" target="content\dist\out-tsc\src\app\app.module.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\app.module.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\app.module.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\app.module.js.map" target="content\dist\out-tsc\src\app\app.module.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\app.module.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\app.module.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\environments\environment.js" target="content\dist\out-tsc\src\environments\environment.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\environments\environment.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\environments\environment.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\environments\environment.js.map" target="content\dist\out-tsc\src\environments\environment.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\environments\environment.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\environments\environment.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\main.js" target="content\dist\out-tsc\src\main.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\main.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\main.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\main.js.map" target="content\dist\out-tsc\src\main.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\main.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\main.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\polyfills.js" target="content\dist\out-tsc\src\polyfills.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\polyfills.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\polyfills.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\polyfills.js.map" target="content\dist\out-tsc\src\polyfills.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\polyfills.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\polyfills.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\test.js" target="content\dist\out-tsc\src\test.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\test.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\test.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\test.js.map" target="content\dist\out-tsc\src\test.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\test.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\test.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\environments\environment.prod.js" target="content\dist\out-tsc\src\environments\environment.prod.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\environments\environment.prod.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\environments\environment.prod.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\environments\environment.prod.js.map" target="content\dist\out-tsc\src\environments\environment.prod.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\environments\environment.prod.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\environments\environment.prod.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\app.component.spec.js" target="content\dist\out-tsc\src\app\app.component.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\app.component.spec.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\app.component.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\app.component.spec.js.map" target="content\dist\out-tsc\src\app\app.component.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\app.component.spec.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\app.component.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\auth.guard.spec.js" target="content\dist\out-tsc\src\app\auth.guard.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\auth.guard.spec.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\auth.guard.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\auth.guard.spec.js.map" target="content\dist\out-tsc\src\app\auth.guard.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\auth.guard.spec.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\auth.guard.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user-info\user-info.component.js" target="content\dist\out-tsc\src\app\user\user-info\user-info.component.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user-info\user-info.component.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\user-info\user-info.component.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user-info\user-info.component.js.map" target="content\dist\out-tsc\src\app\user\user-info\user-info.component.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user-info\user-info.component.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\user-info\user-info.component.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\login\login.component.js" target="content\dist\out-tsc\src\app\user\login\login.component.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\login\login.component.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\login\login.component.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\login\login.component.js.map" target="content\dist\out-tsc\src\app\user\login\login.component.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\login\login.component.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\login\login.component.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user.component.js" target="content\dist\out-tsc\src\app\user\user.component.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user.component.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\user.component.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user.component.js.map" target="content\dist\out-tsc\src\app\user\user.component.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user.component.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\user.component.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\diner-edit\diner-edit.component.js" target="content\dist\out-tsc\src\app\user\diner-edit\diner-edit.component.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\diner-edit\diner-edit.component.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\diner-edit\diner-edit.component.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\diner-edit\diner-edit.component.js.map" target="content\dist\out-tsc\src\app\user\diner-edit\diner-edit.component.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\diner-edit\diner-edit.component.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\diner-edit\diner-edit.component.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\register\register.component.js" target="content\dist\out-tsc\src\app\user\register\register.component.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\register\register.component.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\register\register.component.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\register\register.component.js.map" target="content\dist\out-tsc\src\app\user\register\register.component.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\register\register.component.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\register\register.component.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user-routing.module.js" target="content\dist\out-tsc\src\app\user\user-routing.module.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user-routing.module.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\user-routing.module.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user-routing.module.js.map" target="content\dist\out-tsc\src\app\user\user-routing.module.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user-routing.module.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\user-routing.module.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user.component.spec.js" target="content\dist\out-tsc\src\app\user\user.component.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user.component.spec.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\user.component.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user.component.spec.js.map" target="content\dist\out-tsc\src\app\user\user.component.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user.component.spec.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\user.component.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user.module.js" target="content\dist\out-tsc\src\app\user\user.module.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user.module.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\user.module.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user.module.js.map" target="content\dist\out-tsc\src\app\user\user.module.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user.module.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\user.module.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user.service.spec.js" target="content\dist\out-tsc\src\app\user\user.service.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user.service.spec.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\user.service.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user.service.spec.js.map" target="content\dist\out-tsc\src\app\user\user.service.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user.service.spec.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\user.service.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user-info\user-info.component.spec.js" target="content\dist\out-tsc\src\app\user\user-info\user-info.component.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user-info\user-info.component.spec.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\user-info\user-info.component.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user-info\user-info.component.spec.js.map" target="content\dist\out-tsc\src\app\user\user-info\user-info.component.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\user-info\user-info.component.spec.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\user-info\user-info.component.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\register\register.component.spec.js" target="content\dist\out-tsc\src\app\user\register\register.component.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\register\register.component.spec.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\register\register.component.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\register\register.component.spec.js.map" target="content\dist\out-tsc\src\app\user\register\register.component.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\register\register.component.spec.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\register\register.component.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\login\login.component.spec.js" target="content\dist\out-tsc\src\app\user\login\login.component.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\login\login.component.spec.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\login\login.component.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\login\login.component.spec.js.map" target="content\dist\out-tsc\src\app\user\login\login.component.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\login\login.component.spec.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\login\login.component.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\diner-edit\diner-edit.component.spec.js" target="content\dist\out-tsc\src\app\user\diner-edit\diner-edit.component.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\diner-edit\diner-edit.component.spec.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\diner-edit\diner-edit.component.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\diner-edit\diner-edit.component.spec.js.map" target="content\dist\out-tsc\src\app\user\diner-edit\diner-edit.component.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\user\diner-edit\diner-edit.component.spec.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\user\diner-edit\diner-edit.component.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen.component.spec.js" target="content\dist\out-tsc\src\app\canteen\canteen.component.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen.component.spec.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\canteen.component.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen.component.spec.js.map" target="content\dist\out-tsc\src\app\canteen\canteen.component.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen.component.spec.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\canteen.component.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen.service.spec.js" target="content\dist\out-tsc\src\app\canteen\canteen.service.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen.service.spec.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\canteen.service.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen.service.spec.js.map" target="content\dist\out-tsc\src\app\canteen\canteen.service.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\canteen.service.spec.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\canteen.service.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\take-dinner\take-dinner.component.spec.js" target="content\dist\out-tsc\src\app\canteen\take-dinner\take-dinner.component.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\take-dinner\take-dinner.component.spec.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\take-dinner\take-dinner.component.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\take-dinner\take-dinner.component.spec.js.map" target="content\dist\out-tsc\src\app\canteen\take-dinner\take-dinner.component.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\take-dinner\take-dinner.component.spec.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\take-dinner\take-dinner.component.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\dinner-info\dinner-info.component.spec.js" target="content\dist\out-tsc\src\app\canteen\dinner-info\dinner-info.component.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\dinner-info\dinner-info.component.spec.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\dinner-info\dinner-info.component.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\dinner-info\dinner-info.component.spec.js.map" target="content\dist\out-tsc\src\app\canteen\dinner-info\dinner-info.component.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\dinner-info\dinner-info.component.spec.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\dinner-info\dinner-info.component.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\book-dinner\book-dinner.component.spec.js" target="content\dist\out-tsc\src\app\canteen\book-dinner\book-dinner.component.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\book-dinner\book-dinner.component.spec.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\book-dinner\book-dinner.component.spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\book-dinner\book-dinner.component.spec.js.map" target="content\dist\out-tsc\src\app\canteen\book-dinner\book-dinner.component.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\src\app\canteen\book-dinner\book-dinner.component.spec.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\src\app\canteen\book-dinner\book-dinner.component.spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\e2e\app.po.js" target="content\dist\out-tsc\e2e\app.po.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\e2e\app.po.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\e2e\app.po.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\e2e\app.po.js.map" target="content\dist\out-tsc\e2e\app.po.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\e2e\app.po.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\e2e\app.po.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\e2e\app.e2e-spec.js" target="content\dist\out-tsc\e2e\app.e2e-spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\e2e\app.e2e-spec.js" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\e2e\app.e2e-spec.js" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\e2e\app.e2e-spec.js.map" target="content\dist\out-tsc\e2e\app.e2e-spec.js.map" />
+    <file src="D:\Alps\Alps\Alps.Web.Canteen\dist\out-tsc\e2e\app.e2e-spec.js.map" target="contentFiles\any\netcoreapp1.1\dist\out-tsc\e2e\app.e2e-spec.js.map" />
+  </files>
+</package>

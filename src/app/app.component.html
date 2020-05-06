@@ -1,0 +1,54 @@
+
+<header class="navbar navbar-light navbar-expand bg-primary ">
+
+  <a class="navbar-brand" [routerLink]="['/']" (click)="navbarCollapsed = true">永盛食堂</a>
+
+  <button class="navbar-toggler navbar-toggler-right" type="button" (click)="navbarCollapsed = !navbarCollapsed"
+          [attr.aria-expanded]="!navbarCollapsed" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="navbar-collapse" [ngbCollapse]="navbarCollapsed" id="navbarContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" [routerLink]="['/canteen/canteeninfo']" (click)="navbarCollapsed = true">餐板</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" [routerLink]="['/canteen/bookdinner']" (click)="navbarCollapsed = true">订餐</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" [routerLink]="['/canteen/takedinner']" (click)="navbarCollapsed = true">取餐</a>
+      </li>
+      <li ngbDropdown class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" ngbDropdownToggle>管理</a>
+        <div ngbDropdownMenu  class="dropdown-menu">
+          <a class="dropdown-item" [routerLink]="['/user/dinerlist']" (click)="navbarCollapsed = true" *ngIf="showAdminMenu">人员管理</a>
+          <a class="dropdown-item" [routerLink]="['/canteen/canteeninfo']" (click)="navbarCollapsed = true" *ngIf="showAdminMenu">食堂管理</a>
+          <a class="dropdown-item" [routerLink]="['/canteen/takeinfo']" (click)="navbarCollapsed = true" *ngIf="showAdminMenu">用餐记录</a>
+          <a class="dropdown-item" [routerLink]="['/canteen/bookinfo']" (click)="navbarCollapsed = true" *ngIf="showAdminMenu">订餐记录</a>
+          <a class="dropdown-item" [routerLink]="['/canteen/monthly']" (click)="navbarCollapsed = true" *ngIf="showAdminMenu">月结记录</a>
+          <a class="dropdown-item" [routerLink]="['/canteen/settlement']" (click)="navbarCollapsed = true">消费记录</a>
+       
+        </div>
+      </li>
+      <!--<li class="nav-item d-lg-none" *ngFor="let component of components" [routerLinkActive]="['active']">
+        <a class="nav-link" [routerLink]="['/components', component.toLowerCase()]" (click)="navbarCollapsed = true">{{ component }}</a>
+      </li>-->
+    </ul>
+
+    <span >
+      <a *ngIf="!loginStatus" routerLink="/user/login" class="nav-link" style="color:black"  (click)="navbarCollapsed = true">登录</a>
+      <a *ngIf="loginStatus" routerLink="/user/userinfo" class="nav-link" style="color:black"  (click)="navbarCollapsed = true">
+      <i class="fa fa-user"></i></a>
+    </span>
+  </div>
+</header>
+
+<div class="container-fluid" style="padding-top:20px;padding-bottom:20px">
+  <router-outlet></router-outlet>
+</div>
+<footer class="navbar navbar-light fixed-bottom navbar-expand bg-primary">
+  <a href="https://yosengmetal.com" target="_blank" style="color:white">
+    永盛金属
+  </a>&nbsp;&nbsp;版权所有.
+</footer>

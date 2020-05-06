@@ -1,0 +1,56 @@
+<div class="row text-center">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">用餐情况</div>
+      <div class="card-body">
+        <table class="table ">
+        <thead>
+          <tr>
+            <th></th>
+            <th  class="text-center" *ngFor="let d of titles">{{d.n}}</th>
+          </tr>
+        </thead>
+        <tr>
+          <td >预约</td>
+          <td  *ngFor="let d of titles">{{d.q}}</td>
+        </tr>
+          <tr>
+            <td>用餐</td>
+            <td *ngFor="let d of takeinfo">{{d.q}}</td>
+          </tr>
+          <tr>
+            <td>约取</td>
+            <td *ngFor="let d of takeInBookInfo">{{d.q}}</td>
+          </tr>
+          <tr>
+            <td>二取</td>
+            <td *ngFor="let d of secondTakeInfo">{{d.q}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row row-margin-top text-center">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">预约情况</div>
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>日期</th>
+              <th  class="text-center" *ngFor="let d of titles">{{d.n}}</th>
+            </tr>
+          </thead>
+          <tr *ngFor="let d of bookinfo">
+            <td>{{d.d | date:"MM-dd"}}</td>
+            <td *ngFor="let q of d.b">{{q.q}}</td>
+          </tr>
+          
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,62 @@
+<div class="row">
+
+  <div class="form-group col-6 col-md-3">
+    <label for="cardNumber">餐名：</label><input class="form-control" type="text" [(ngModel)]="dinnerName" />
+  </div>
+  <div class="form-group  col-6  col-md-3">
+    <label for="dinerName">姓名：</label>
+    <input class="form-control" type="text" [(ngModel)]="dinerName" />
+  </div>
+
+  <!--<div class="form-group  col-4">
+  <label>&nbsp;</label>
+    <button class="btn btn-outline-primary btn-block" (click)="search()">查询</button>
+  </div>-->
+  <!--</div>
+  <div class="row">-->
+  <div class="form-group  col-12 col-sm-6  col-md-3">
+    <label for="dateStart">起始日期：</label>
+    <div class="input-group">
+      <input class="form-control" placeholder="yyyy-mm-dd"
+             name="dateStart" [(ngModel)]="dateStart" ngbDatepicker #dateStartControl="ngbDatepicker">
+      <button class="input-group-addon" (click)="dateStartControl.toggle()" type="button">
+        <i class="fa fa-calendar"></i>
+        <!--<img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;" />-->
+      </button>
+    </div>
+  </div>
+  <div class="form-group  col-12 col-sm-6  col-md-3">
+    <label for="dateEnd">截止日期：</label>
+    <div class="input-group">
+      <input class="form-control" placeholder="yyyy-mm-dd"
+             name="dateEnd" [(ngModel)]="dateEnd" ngbDatepicker #dateEndControl="ngbDatepicker">
+      <button class="input-group-addon" (click)="dateEndControl.toggle()" type="button">
+        <i class="fa fa-calendar"></i>
+        <!--<img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;" />-->
+      </button>
+    </div>
+  </div>
+  <div class="form-group  col-12">
+    <button class="btn btn-outline-primary btn-block" (click)="search()">查询</button>
+  </div>
+</div>
+<table class="table table-sm">
+  <tr>
+    <td>姓名</td>
+    <td>日期</td>
+    <td>餐名</td>
+  </tr>
+  <tr *ngFor="let r of searchResult">
+    <td>{{r.n}}</td>
+    <td>{{r.d}}</td>
+    <td>{{r.dn}}</td>
+  </tr>
+  <tr *ngIf="noResult">
+    <td colspan="4">未找到匹配的记录</td>
+  </tr>
+  <tr *ngIf="!noResult&& searchResult.length>0">
+    <td>合计</td>
+    <td></td>
+    <td>{{searchResult.length}}</td>
+  </tr>
+</table>

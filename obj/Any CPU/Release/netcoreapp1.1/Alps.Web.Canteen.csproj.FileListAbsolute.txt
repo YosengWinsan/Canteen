@@ -1,0 +1,11 @@
+D:\Alps\Alps\Alps.Web.Canteen\bin\Any CPU\Release\netcoreapp1.1\Alps.Web.Canteen.deps.json
+D:\Alps\Alps\Alps.Web.Canteen\bin\Any CPU\Release\netcoreapp1.1\Alps.Web.Canteen.runtimeconfig.json
+D:\Alps\Alps\Alps.Web.Canteen\bin\Any CPU\Release\netcoreapp1.1\Alps.Web.Canteen.runtimeconfig.dev.json
+D:\Alps\Alps\Alps.Web.Canteen\bin\Any CPU\Release\netcoreapp1.1\Alps.Web.Canteen.dll
+D:\Alps\Alps\Alps.Web.Canteen\bin\Any CPU\Release\netcoreapp1.1\Alps.Web.Canteen.pdb
+D:\Alps\Alps\Alps.Web.Canteen\obj\Any CPU\Release\netcoreapp1.1\Alps.Web.Canteen.csprojResolveAssemblyReference.cache
+D:\Alps\Alps\Alps.Web.Canteen\obj\Any CPU\Release\netcoreapp1.1\Alps.Web.Canteen.csproj.CoreCompileInputs.cache
+D:\Alps\Alps\Alps.Web.Canteen\obj\Any CPU\Release\netcoreapp1.1\Alps.Web.Canteen.AssemblyInfoInputs.cache
+D:\Alps\Alps\Alps.Web.Canteen\obj\Any CPU\Release\netcoreapp1.1\Alps.Web.Canteen.AssemblyInfo.cs
+D:\Alps\Alps\Alps.Web.Canteen\obj\Any CPU\Release\netcoreapp1.1\Alps.Web.Canteen.dll
+D:\Alps\Alps\Alps.Web.Canteen\obj\Any CPU\Release\netcoreapp1.1\Alps.Web.Canteen.pdb

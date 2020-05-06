@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">账户信息</div>
+      <div class="card-body">
+        用户名:<strong>{{realname}}</strong><br />令牌到期时间：{{expiresTime|date:"MM-dd HH:mm"}}
+        <div><button class="btn btn-light" (click)="logout()">退出登录</button></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row row-margin-top" *ngIf="showBindDiner">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">绑定信息，绑定成功方可预约</div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-3">姓名</div>
+          <div class="col-4">身份证号</div><div class="col-3">卡号</div>
+          <div class="col-2"><a routerLink="/user/binddiner"><i class="fa fa-plus"></i></a></div>
+        </div>
+        <div class="row" *ngFor="let diner of bindDiners">
+          <div class="col-3">
+            {{diner.bindName}}
+          </div>
+          <div class="col-4">
+            {{diner.bindIDNumber}}
+          </div>
+          <div class="col-3">
+            {{diner.dinerName}}
+
+            <!--<a routerLink="/user/binddiner/{{diner.id}}"><i class="fa fa-edit"></i></a>-->
+          </div>
+          <div class="col-2"><a href="#" (click)="$event.preventDefault();unbindDiner(diner.id)"><i class="fa fa-trash"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="alert alert-success alert-dismissible fade show" style="height:200px;padding-top:80px;" role="alert" *ngIf="msg!=''">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="msg=''">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="text-center" style="font-size:30px">{{msg}}</div>
+</div>
+<div class="alert alert-danger alert-dismissible fade show" style="height:200px;padding-top:80px;"  role="alert" *ngIf="errMsg!=''">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="errMsg=''">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="text-center" style="font-size:30px">{{errMsg}}</div>
+</div>
+
+
+<div class="form-group" >
+  <label for="cardNumber"> 请刷卡</label>
+  <input #inputbox type="text" class="form-control" id="cardNumber" [formControl]="cardNumberControl" (keyUp.enter)="entertotakeDinner()">
+</div>
+<div class="form-group text-center">
+  <input class="form-check-inline" type="checkbox" name="noBookTake" [(ngModel)]="noBookTake">允许未预约刷卡
+  <label>  </label>
+</div>
+<!--<div class="form-group text-center">
+ <input type="checkbox" name="autosubmit" [(ngModel)]="autosubmit">自动提交最接近一餐
+  <label>  </label>
+</div>-->
+<div class="form-group">
+    <button type="button" class="btn btn-primary btn-lg btn-block" *ngFor="let dinner of dinners" (click)="takeDinner(dinner.id)" style="margin-right:5px;margin-bottom:5px;">{{dinner.name}}</button>
+</div>
+
+<hr />
+<table class="table table-sm text-center">
+
+  <tr>
+    <td>序号</td>
+    <td>时间</td>
+    <td>姓名</td>
+    <td>操作</td>
+  </tr>
+<tr *ngFor="let record of takerecords;let i=index" >
+<td>{{i+1}}</td><td>{{record.tt}}</td><td>{{record.cn}}</td><td><button class="btn btn-light btn-sm" (click)="deleteTakeRecord(record.id)">删除</button></td>
+</tr>
+</table>
+

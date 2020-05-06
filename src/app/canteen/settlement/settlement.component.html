@@ -1,0 +1,27 @@
+<div class="row">
+<div class="form-group  col-12 col-sm-6  col-md-4">
+  <label for="dinerID">请选择用餐者</label>
+  <select name="dinerID" class="form-control" [(ngModel)]="selectedDiner" (change)="selectDiner()">
+    <option *ngFor="let diner of diners" [value]="diner.id">{{diner.name}}</option>
+  </select>
+</div>
+<div class="form-group  col-12 col-sm-6  col-md-4">
+  <label for="dinerID">请选择月份</label>
+  <select name="dinerID" class="form-control" [(ngModel)]="selectedYearMonth" (change)="selectDiner()">
+    <option *ngFor="let ym of yearMonths" [value]="ym">{{ym}}</option>
+  </select>
+</div>
+<div class="form-group  col-sm-12 col-md-4">
+<label class="d-md-block d-none">&nbsp;</label>
+  <button class="btn btn-outline-primary btn-block" (click)="search()">查询</button>
+</div>
+</div>
+<table class="table table-sm table-bordered text-center">
+  <tr><td>日期</td>
+  <td *ngFor="let i of titles">{{i.dn}}</td>
+  </tr>
+<tr *ngFor="let d of info">
+<td>{{d.d}}</td>
+  <td *ngFor="let i of d.i" [ngStyle]="{'color':(i.bc==0&&i.tc>0)||(i.bc>0&&i.tc==0)?'red':'blue'}"><span *ngIf="i.bc>0||i.tc>0">{{i.tc}}({{i.bc}})</span></td>
+</tr>
+</table>
