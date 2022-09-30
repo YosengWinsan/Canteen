@@ -208,7 +208,7 @@ namespace Alps.Web.Canteen.Controllers
       var bookInfoQuery = from t in date
                           from d in dinners
                           select new { Date = t.Date, Name = d.Name, ID = d.ID } into trix
-                          join b in _context.BookRecords on new { trix.Date, trix.ID } equals new { Date = b.DinnerDate, ID = b.DinnerID } into jrst
+                          join b in _context.BookRecords.Where(p=>p.DinnerDate>=DateTime.Today.AddHours(-8)) on new { trix.Date, trix.ID } equals new { Date = b.DinnerDate, ID = b.DinnerID } into jrst
                           from j in jrst.DefaultIfEmpty()
                           group j by new { trix.Date, trix.Name } into g
                           select new { d = g.Key.Date, b = new { n = g.Key.Name, q = g.Count(p => p != null) } } into k
@@ -521,14 +521,15 @@ namespace Alps.Web.Canteen.Controllers
       var takeInfo = (from t in _context.TakeRecords
                       from d in _context.Diners
                       from dn in _context.Dinners
-                      where t.CardNumber == d.CardNumber && dn.ID == t.DinnerID
-                      && (t.TakeDate.AddHours(8).Year * 100 + t.TakeDate.AddHours(8).Month) == dto.YearMonth && d.ID == dto.DinerID
-                      group dn by new { dn.Name, t.TakeDate } into g
+                      where t.CardNumber == d.CardNumber && dn.ID == t.DinnerID    &&  d.ID == dto.DinerID
+                      && (t.TakeDate.AddHours(8).Year * 100 + t.TakeDate.AddHours(8).Month) == dto.YearMonth
+                      select new {TakeDate=t.TakeDate,Name=dn.Name} into tempt
+                      group tempt by new { tempt.Name, tempt.TakeDate } into g
                       orderby g.Key.TakeDate, g.Key.Name
                       select new { DinnerName = g.Key.Name, Date = g.Key.TakeDate.AddHours(8), Count = g.Count() }).ToList();
 
-      var dinnerInfo = from dn in _context.Dinners
-                       select dn.Name;
+      var dinnerInfo = (from dn in _context.Dinners
+                       select dn.Name).ToList();
       var dateDinner = (from dn in dinnerInfo
                         from d in date
                         select new { DinnerName = dn, Date = d }).ToList();
